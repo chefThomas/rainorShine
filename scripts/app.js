@@ -3,7 +3,7 @@ const api = new WeatherService();
 const display = new ui();
 
 // default to Seattle weather when app first loads
-window.onload = () => {
+window.onload = function() {
   api.getWeather(98122)
   .then(data => {
     if(data.weather.cod == "404"){ 

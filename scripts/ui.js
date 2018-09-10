@@ -85,7 +85,7 @@ class ui {
   
         }
 
-      this.wind.innerText = `Speed, ${((r.wind.speed/1600)* (1/1.6)).toFixed(1)} mph, Direction, ${cardinalWindDirection(r.wind.deg)} ( ${r.wind.deg.toFixed(0)} )`; // convert meters/s to mph
+      this.wind.innerText = `Speed, ${((r.wind.speed * Math.pow(60, 2)/1600)).toFixed(1)} mph, Direction, ${cardinalWindDirection(r.wind.deg)} ( ${r.wind.deg.toFixed(0)} )`; // convert meters/s to mph
 
       
       }

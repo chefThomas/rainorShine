@@ -5,7 +5,7 @@ const display = new ui();
 // default to Seattle weather when app first loads
 window.onload = function() {
   api.getWeather(98122)
-  .then(data => {
+  .then(function (data) {
     if(data.weather.cod == "404"){ 
       display.displayError(zipUserInput, "That zip does not exist")
       return;
@@ -28,7 +28,7 @@ window.onload = function() {
 const submitButton = document.getElementById('submit-button').addEventListener('click', apiRequest);
 
 // listen for enter key
-const enterKey = document.getElementById('zip').addEventListener("keydown", (event) => {
+const enterKey = document.getElementById('zip').addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
     apiRequest();
     event.preventDefault();
@@ -59,7 +59,7 @@ function apiRequest(){
   if(pattern.test(zipUserInput.value)) {
 
     api.getWeather(zipUserInput.value)
-    .then(data => {
+    .then(function(data) {
       if(data.weather.cod == "404"){ 
         display.displayError(zipUserInput, "That zip does not exist")
         return;

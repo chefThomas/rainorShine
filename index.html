@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Rain or Shine?</title>
+</head>
+
+<body>
+  <nav class="navbar app-title ">
+    <!-- <span class= "navbar-text"> -->
+    RAIN or SHINE?
+    </span>
+  </nav>
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-md-5 mx-auto text-center bg-info p-5 rounded">
+        <h2 id="w-location">Location</h2>
+        <h3 class="text-dark" id="w-description">Weather description</h3>
+        <h3 id="w-temperature">Temp in F</h3>
+        <img id="w-icon" alt="weather icon">
+        <ul class="list-group mt-3" id="w-details">
+          <li class="group-item" id="w-humidity">Humidity</li>
+          <li class="group-item"><u>Wind</u></li>
+          <li class="group-item" id="w-wind"></li>
+
+        </ul>
+        <hr>
+        <form id="form">
+          <div class="form-group">
+            <input type="text" id="zip" class="form-control-sm" placeholder="zip code">
+          </div>
+        </form>
+        <button id="submit-button" type="button" class="btn btn-warning btn-lg">Change
+          Location</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="./scripts/storage.js"></script>
+  <script src="./scripts/weatherAPI.js"></script>
+  <script src="./scripts/ui.js"></script>
+  <script src="./scripts/app.js"></script>
+</body>
+
+</html>

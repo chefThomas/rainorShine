@@ -1,0 +1,15 @@
+li {
+  list-style-type: none;
+}
+
+.app-title {
+  font-size: 5rem;
+  font-family: 'Amatic SC', cursive;
+  justify-content: center;
+  background-color: #2b3e50;
+}
+
+.error {
+  background: #d9534f;
+  color: white
+}
